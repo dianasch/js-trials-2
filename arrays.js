@@ -48,12 +48,12 @@ function smallestNItems(items, n) {
   //   return a - b;
   // }
 
-  items.sort((a, b) => a - b);
+  const itemsSort = items.sort((a, b) => a - b);
 
-  items.slice(0, (n - 1));
+  const itemsSlice = itemsSort.slice(0, (n));
 
-  items.reverse();
+  const itemsReverse = itemsSlice.reverse();
   
-  console.log(items);
+  console.log(itemsReverse);
 
 }
