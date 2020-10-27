@@ -3,7 +3,14 @@
 
 // 1. isHometown
 
-// Define your function here
+// Given a `town`, return `true` if `town` is 'New York City'.
+// Arguments: 
+    // town(str): A town
+
+// Returns:
+    // bool: true if `town` is `New York City `
+
+const isHometown = town => town === 'New York City';
 
 
 // 2. getFullName
