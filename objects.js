@@ -33,5 +33,26 @@ function countWords(phrase) {
 
 // 2. getMelonsAtPrice
 function getMelonsAtPrice(price) {
-  // Replace this with your code
+  // Return the list of melons that cost `price`.
+
+  // Set variable melonPrices to an object containing melon prices
+  // Keys are prices of melons
+  // Values are a list of melons with that price
+  const melonPrices = {
+    2.50: ['Cantaloupe', 'Honeydew'],
+    2.95: ['Watermelon'],
+    3.25: ['Musk', 'Crenshaw'],
+    14.25: ['Christmas']
+  }
+
+// Determine if price is in melonPrices
+if (melonPrices.hasOwnProperty(price)) {
+
+  // If so, return the list of melons stored at price
+  return melonPrices[price].sort()
+
+  // Otherwise, return undefined
+} else {
+  return
+}
 }
